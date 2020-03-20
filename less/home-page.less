@@ -1,5 +1,6 @@
 // Home Content
 //fixed navigation
+
 .Nav{
 position: fixed;
 top: 0;
@@ -10,9 +11,14 @@ font-family: @nav-font;
 padding: 1%;
 font-size: 20px;
 
+@media @mobile{
+  width:100%;
+  max-width: 0 auto;
+}
 }
 #a {color: @river-bend;
   padding: 1%;
+
 
 }
 
@@ -23,14 +29,24 @@ h1 {
   padding-top: 1%;
   padding-bottom: 1%;
 }
-
+.container home{
+  @media @mobile{
+    width:200%;
+    max-width: 0 auto;
+  }
+}
 .home {
+  @media @mobile{
+    width:100%;
+  }
 
   .intro {
     padding-top: 16%;
+
     h2 {
       padding: 15px;
     }
+
     h2 {
       .fonts()
     }
@@ -38,7 +54,10 @@ h1 {
     p {
       padding:0 15px;
     }
-
+    img {
+      @media @mobile{
+        width:100%;
+      }}
   }
 
   .space-images {
@@ -46,6 +65,18 @@ h1 {
     flex-wrap: wrap;
     width: 100%;
 
+    }
+
+
+    @media @mobile {
+      .picOne {
+        display:none;}
+
+
+      .picTwo {
+        display: none;
+      }
+    }
     img {
       .spaceimgs();
     }
@@ -60,6 +91,11 @@ h1 {
 
     p {
       margin-top: 13px;
+
+      @media @mobile{
+        width:100%;
+        max-width: 0 auto;
+      }
     }
   }
 
@@ -69,6 +105,14 @@ h1 {
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+        width:100%;
+        max-width: 0 auto;
+
+    }
 
     .walk-text {
       width: 50%;
@@ -86,6 +130,8 @@ h1 {
       &:hover{
         color:red;
         background-color:white;
+
+
       }
       }
 
@@ -98,7 +144,12 @@ h1 {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+        @media @mobile{
+          width:200%;
+
+        }
       }
     }
   }
-}// home
+// home

@@ -34,13 +34,20 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+*Adaptive- media break points allow to write css based on the size of the screen. responsive is fixed, fluid, adaptive combined together. No scrollbar.
+
 2. Describe what it means to be mobile first vs desktop first.
+*mobile first is creating a mobile phone layout first than a desktop layout. when using molbile first you must use min-width to create other larger layouts like tablet or desktop.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+*makes the default font size for your entire website 10px.
 
 4. How would you describe preprocessing to someone new to CSS?
 
+*it is a program that lets you generate css from its syntax. Preprocessors have more features than pure css allowing developers to work more efficently.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+*variables are my favorite because it gives my code organization. Mixins are still very new to me so I need more practice.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -56,13 +63,13 @@ Follow these steps to set up your project:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 ### Preprocessor Set up
 
@@ -90,7 +97,7 @@ Your finished project must include all of the following requirements:
 7.home-page.less
 ```
 
-_You will know everything is working properly when you see the styles enabled for the provided content._  
+_You will know everything is working properly when you see the styles enabled for the provided content._
 
 ### Home Page - Desktop HTML & LESS
 
