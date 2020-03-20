@@ -1,1 +1,26 @@
 // Mixins Here
+
+.fonts(){
+  font-size: 3.2rem;
+  color: #23293B;
+}
+.spaceimgs(){
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+
+
+
+//Parametric Mixin
+.custom-btn(@btn-bg-color:#23293B, @fontcolor:white){
+
+    color: @fontcolor;
+    background-color: @btn-bg-color;
+    margin: 0 10px 20px;
+    width: 150px;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+}
